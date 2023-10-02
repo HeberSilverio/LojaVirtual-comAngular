@@ -1,5 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
+
+/* Legenda de cores
+ */
+:root{
+  --Roxo:#732472;
+  --Vermelho:#f1331b;
+  --Laranja:#efab52;
+  --Rosa:#ffa9c5;
+  --Amarelo:#feff00;
+  --Dourado:#ffd700;
+  --Azul:#0401fe;
+}
+
+
 *{
   margin: 0;
   padding: 0;

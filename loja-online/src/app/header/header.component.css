@@ -1,8 +1,18 @@
+:root{
+  --Roxo:#732472;
+  --Vermelho:#f1331b;
+  --Laranja:#efab52;
+  --Rosa:#ffa9c5;
+  --Amarelo:#feff00;
+  --Dourado:#ffd700;
+  --Azul:#0401fe;
+}
 .nav{
   display: flex;
   justify-content: space-between;
+  margin-top: 15px;
+  border: 1px solid #000;
 }
-
 
 .nav ul
 {
@@ -10,6 +20,41 @@
   list-style-type: none;
 }
 .nav li {
-  padding-left: 15px;
-  padding-top: 15px;
+  display: flex;
+  align-items: center;
+  padding-right: 15px;
 }
+.nav li a{
+  text-decoration: none;
+  color: var(--Roxo);
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.nav .nav-search{
+  display: flex;
+  align-items: center;
+  flex: 1;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.nav .nav-search input{
+  flex: 1;
+  color: var(--Roxo);
+  border: 1px solid var(--Roxo);
+  height: 35px;
+  border-right: 0px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  padding: 5px;
+}
+.nav .nav-search button{
+  flex: 1;
+  color: var(--Roxo);
+  border: 1px solid var(--Roxo);
+  height: 35px;
+  border-left: 0px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding: 5px;
+}
+
