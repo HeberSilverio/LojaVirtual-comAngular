@@ -1,0 +1,15 @@
+.nav{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.nav ul
+{
+  display: inline-flex;
+  list-style-type: none;
+}
+.nav li {
+  padding-left: 15px;
+  padding-top: 15px;
+}
