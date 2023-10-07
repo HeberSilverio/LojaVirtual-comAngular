@@ -1,6 +1,30 @@
 <div class="seller-auth">
+   <div class="retangulo"></div>
+
    <div class="signup">
-      <h1>Login do vendedor</h1>
-      parei 46:37
+      <div class="entrar">
+         <h1>Entrar</h1>
+      </div>
+      <hr>
+      <div class="estilo-hr">
+      </div>
+      <div class="cadastrar">
+         <h1>Cadastra-se</h1>
+         <form #sellerSignUp="ngForm" (ngSubmit)="signUp(sellerSignUp.value)" class="formulario">
+            <div class="itens-formulario">
+               <span>Nome de usuário*</span>
+               <input class="form-input" type="text" ngModel name="name" placeholder="Nome">
+               
+               <span>Crie sua senha*</span>
+               <input class="form-input" type="password" ngModel name="password" placeholder="Digite sua senha">
+
+               <span>Seu melhor e-mail*</span>
+               <input class="form-input" type="text" ngModel name="e-mail"  placeholder="Digite seu e-mail">
+
+               <button  class="form-button">Cadastrar</button>
+            </div>
+   
+         </form>
+      </div>
    </div>
 </div>
