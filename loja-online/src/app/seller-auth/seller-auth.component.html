@@ -12,16 +12,18 @@
          <h1>Cadastra-se</h1>
          <form #sellerSignUp="ngForm" (ngSubmit)="signUp(sellerSignUp.value)" class="formulario">
             <div class="itens-formulario">
-               <span>Nome de usuário*</span>
+               <p class="form-rotulo">Nome de usuário<span>*</span></p>
                <input class="form-input" type="text" ngModel name="name" placeholder="Nome">
 
-               <span>Crie sua senha*</span>
+               <p class="form-rotulo">Crie sua senha<span>*</span></p>
                <input class="form-input" type="password" ngModel name="password" placeholder="Digite sua senha">
 
-               <span>Seu melhor e-mail*</span>
+               <p class="form-rotulo">Seu melhor e-mail<span>*</span></p>
                <input class="form-input" type="text" ngModel name="email"  placeholder="Digite seu e-mail">
 
-               <button  class="form-button">Cadastrar</button>
+               <div class="btn-form">
+                  <button  class="btn-verde">Cadastra-se </button>
+               </div>
             </div>
 
          </form>
