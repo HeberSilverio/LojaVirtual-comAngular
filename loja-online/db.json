@@ -1,16 +1,22 @@
 {
   "seller": [
     {
-      "name": "Heber",
-      "password": "heber123",
-      "email": "hebersilverio@gmail.com",
+      "name": "teste1",
+      "password": "teste1",
+      "email": "teste1@gmail.com",
       "id": 1
     },
     {
-      "name": "Isaque",
-      "password": "isaque123",
-      "email": "isaque@gmail.com",
+      "name": "teste3",
+      "password": "teste3",
+      "email": "teste3@gmail.com",
       "id": 2
+    },
+    {
+      "name": "Teste2",
+      "password": "Teste1",
+      "email": "Teste2@gmail.com",
+      "id": 3
     }
   ]
 }

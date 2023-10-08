@@ -6,22 +6,35 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Para utilizar um banco de dados local
 
-## Build
+Instale o banco de dados json local com o seguinte comando:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+```
+npm install -g json-server
+```
 
-## Running unit tests
+Para interagir com o banco de dados de forma visual uilize a ferramenta 'Postman'.
+[Site Postman](https://www.postman.com/)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Para rodar o servidor json local:
+```
+json-server --watch db.json
+```
 
-## Running end-to-end tests
+## INTERAGINDO COM ANGULAR
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+- Para criar componentes
+```
+ng g c <nome do componente>
+```
+- O route guards (ou rota de guarda), faz a verificação se o usuário pode ou não acessar determinada rota.
+```
+ng g guard auth
+``` 
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+Parei 1:07:10
+https://youtu.be/CF59AuAKI6o?si=yHF0mEvxsFkZtWB6
