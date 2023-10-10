@@ -1,15 +1,10 @@
 <div class="seller-auth">
    <div class="retangulo"></div>
 
-   <div class="signup">
-      <div class="entrar">
-         <h1>Entrar</h1>
-      </div>
-      <hr>
-      <div class="estilo-hr">
-      </div>
-      <div class="cadastrar">
-         <h1>Cadastra-se</h1>
+   <div  class="signup">
+
+      <div *ngIf="!MostrarLogin" class="cadastrar">
+         <h1>Cadastra-se como vendedor</h1>
          <form #sellerSignUp="ngForm" (ngSubmit)="signUp(sellerSignUp.value)" class="formulario">
             <div class="itens-formulario">
                <p class="form-rotulo">Nome de usuário<span>*</span></p>
@@ -23,10 +18,36 @@
 
                <div class="btn-form">
                   <button  class="btn-verde">Cadastra-se </button>
+                  <div>
+                     <p>Já possui cadastro? <a  (click)="openLogin()"> Entrar </a></p> 
+                  </div>
+                  
                </div>
             </div>
 
          </form>
       </div>
+
+      <div *ngIf="MostrarLogin" class="entrar">
+         <h1>Entrar</h1>
+         <form #sellerSignUp="ngForm" (ngSubmit)="signUp(sellerSignUp.value)" class="formulario">
+            <div class="itens-formulario">
+
+               <p class="form-rotulo"><span>Nome de usuário ou e-mail*</span></p>
+               <input class="form-input" type="text" ngModel name="name" placeholder="Seu e-mail">
+
+               <p class="form-rotulo">Crie sua senha<span>*</span></p>
+               <input class="form-input" type="password" ngModel name="password" placeholder="Digite sua senha">
+
+               <div class="btn-form">
+                  <button  class="btn-verde">Entrar </button>
+                  <a  (click)="openSignUp()"> Entrar </a>
+               </div>
+            </div>
+         </form>
+      </div>
+
+     
+      
    </div>
 </div>
