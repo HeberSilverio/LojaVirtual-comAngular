@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from "@angular/common/http"
-import { SignUp } from '../data-types';
+import { SignUp, login } from '../data-types';
 import { BehaviorSubject } from 'rxjs';
 import { Route, Router } from '@angular/router';
 
@@ -24,5 +24,8 @@ export class SellerService {
       this.isSellerLoggedIn.next(true);
       this.router.navigate(['seller-home']);
     }
+  }
+  userLogin(data:login){
+    console.warn(data)
   }
 }
