@@ -19,7 +19,7 @@
                <div class="btn-form">
                   <button  class="btn-verde">Cadastra-se </button>
                   <div>
-                     <p>Já possui cadastro? <a  (click)="openLogin()"> Entrar </a></p> 
+                     <p>Já possui cadastro? <a  (click)="openLogin()"> <span class="btn-azul">Entrar</span> </a></p> 
                   </div>
                   
                </div>
@@ -28,12 +28,12 @@
          </form>
       </div>
 
-      <div *ngIf="MostrarLogin" class="entrar">
+      <div *ngIf="MostrarLogin" class="entrar cadastrar">
          <h1>Entrar</h1>
          <form #sellerSignUp="ngForm" (ngSubmit)="signUp(sellerSignUp.value)" class="formulario">
             <div class="itens-formulario">
 
-               <p class="form-rotulo"><span>Nome de usuário ou e-mail*</span></p>
+               <p class="form-rotulo">Nome de usuário ou e-mail<span>*</span></p>
                <input class="form-input" type="text" ngModel name="name" placeholder="Seu e-mail">
 
                <p class="form-rotulo">Crie sua senha<span>*</span></p>
@@ -41,7 +41,7 @@
 
                <div class="btn-form">
                   <button  class="btn-verde">Entrar </button>
-                  <a  (click)="openSignUp()"> Entrar </a>
+                  <p>Ainda não tem cadastro?<a  (click)="openSignUp()">  <span class="btn-azul">Cadastrar</span></a></p>
                </div>
             </div>
          </form>
