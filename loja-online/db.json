@@ -5,11 +5,17 @@
       "password": "Teste1",
       "email": "Teste1@gmail.com",
       "id": 1
-    },
+    }
+  ],
+  "products": [
     {
-      "name": "Teste1@gmail.com",
-      "password": "Teste1",
-      "id": 2
+      "name": "Telefone celular",
+      "description-product": "50 milhões de câmeras duplas ultra nítidas, 5 milhões de retratos frontais, cada detalhe é um destaque Imagem ultra nítida de 50 milhões de pixels",
+      "price-product": "1800",
+      "color-product": "azul",
+      "category-product": "xiaomi",
+      "image-product": "https://m.media-amazon.com/images/I/51cU7HevYPL._AC_UF1000,1000_QL80_.jpg",
+      "id": 1
     }
   ]
 }

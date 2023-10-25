@@ -1,37 +1,31 @@
 <section class="add-product container">
   <h1 class="text-center">Cadastro de produtos</h1>
 
-  <div class="itens-formulario row">
-     <div class="col-9 h400">
-        <div class="col-6">
-           <form #addProduct="ngForm" class="formulario">
-               <label class="form-rotulo">Nome do produto<span>*</span></label>
-               <input type="text" class="form-input" ngModel name="name" placeholder="Nome do produto">
-            </form>
-         </div>
-         <div class="col-6">
-            <label class="form-rotulo form-label">Descrição do produto<span>*</span></label>
-            <textarea type="text" class="form-input form-control " ngModel name="description-product" placeholder="Descrição do produto" rows="3"></textarea>
-         </div>
-         <div class="col-2">
-            <label class="form-rotulo">REF<span>*</span></label>
-            <input type="text" class="form-input" ngModel name="ref-product" placeholder="Referência do produto">
-         </div>
-         <div class="col-2">
-            <label class="form-rotulo">Preço(R$)<span>*</span></label>
-            <input type="text" class="form-input" ngModel name="price-product" placeholder="Preço do produto">
-         </div>
-         <div class="col-2">
-            <label class="form-rotulo">Cores<span>*</span></label>
-            <input type="text" class="form-input" ngModel name="color-product" placeholder="Cor do produto">
-         </div>
-      </div>
-      <div class="col-3 bg-info h400">
-         <div class="">
-            <label class="form-rotulo">Categorias de produto<span>*</span></label>
-            <input type="text" class="form-input" ngModel name="category-product" placeholder="Categorias do produto">
-         </div>
-      </div>  
-   </div>
+    <div class="itens-formulario">
+        <form #addProduct="ngForm" (ngSubmit)="submit(addProduct.value)" class="formulario">
+
+              <input type="text" class="form-input form-control" ngModel name="name" placeholder="Nome do produto">
+
+
+              <textarea type="text" class="form-input form-control " ngModel name="description-product" placeholder="Descrição do produto" rows="3"></textarea>
+
+              <input type="text" class="form-input form-control" ngModel name="price-product" placeholder="Preço do produto (R$)">
+
+
+              <input type="text" class="form-input form-control" ngModel name="color-product" placeholder="Cor do produto">
+
+
+              <input type="text" class="form-input form-control" ngModel name="category-product" placeholder="Categorias do produto">
+
+
+              <input type="text" class="form-input form-control" ngModel name="image-product" placeholder="Url da img do produto">
+
+              <div class="btn-form">
+                <button  class="btn-azul btn-azul-grande">Cadastrar Produto</button>
+              </div>
+              
+              <p class="message-success text-center"> {{addProductMessage}} </p>
+        </form>
+    </div>
 </section>
 
