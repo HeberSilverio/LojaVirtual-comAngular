@@ -2,8 +2,7 @@
    <div class="retangulo"></div>
 
    <div  class="signup">
-
-      <div *ngIf="!MostrarLogin" class="cadastrar">
+      <div *ngIf="!showLogin" class="cadastrar">
          <h1>Cadastra-se como vendedor</h1>
          <form #sellerSignUp="ngForm" (ngSubmit)="signUp(sellerSignUp.value)" class="formulario">
             <div class="itens-formulario">
@@ -19,35 +18,32 @@
                <div class="btn-form">
                   <button  class="btn-verde">Cadastra-se </button>
                   <div>
-                     <p>Já possui cadastro? <a  (click)="openLogin()"> <span class="btn-azul">Entrar</span> </a></p> 
+                     <p>Já possui cadastro? <a  (click)="openLogin()"> <span class="btn-azul">Entrar</span> </a></p>
                   </div>
-                  
+
                </div>
             </div>
 
          </form>
       </div>
 
-      <div *ngIf="MostrarLogin" class="entrar cadastrar">
+      <div *ngIf="showLogin" class="entrar cadastrar">
          <h1>Entrar</h1>
-         <form #sellerSignUp="ngForm" (ngSubmit)="signUp(sellerSignUp.value)" class="formulario">
+         <p class="error-p">{{authError}}</p>
+         <form #sellerSignUp="ngForm" (ngSubmit)="login(sellerSignUp.value)" class="formulario">
             <div class="itens-formulario">
-
-               <p class="form-rotulo">Nome de usuário ou e-mail<span>*</span></p>
-               <input class="form-input" type="text" ngModel name="name" placeholder="Seu e-mail">
+               <p class="form-rotulo">Digite seu e-mail<span>*</span></p>
+               <input class="form-input" type="text" ngModel name="email" placeholder="Digite seu e-mail">
 
                <p class="form-rotulo">Crie sua senha<span>*</span></p>
                <input class="form-input" type="password" ngModel name="password" placeholder="Digite sua senha">
 
                <div class="btn-form">
                   <button  class="btn-verde">Entrar </button>
-                  <p>Ainda não tem cadastro?<a  (click)="openSignUp()">  <span class="btn-azul">Cadastrar</span></a></p>
+                  <p>Ainda não tem cadastro? <a  (click)="openSignUp()">  <span class="btn-azul">Cadastrar</span></a></p>
                </div>
             </div>
          </form>
       </div>
-
-     
-      
    </div>
 </div>

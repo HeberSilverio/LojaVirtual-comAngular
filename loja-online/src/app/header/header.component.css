@@ -11,9 +11,11 @@
   display: flex;
   justify-content: space-between;
   margin-top: 15px;
-  border: 1px solid #000;
 }
-
+.nav a img{
+  max-width: 100px;
+  border-radius: 10px;
+}
 .nav ul
 {
   display: inline-flex;

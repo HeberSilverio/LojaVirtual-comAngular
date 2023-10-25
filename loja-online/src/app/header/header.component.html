@@ -1,16 +1,26 @@
-<nav class="nav">
-  <img src="https://raw.githubusercontent.com/HeberSilverio/LojaVirtual-comAngular/main/loja-online/src/img/logos-chowbits-small.png" alt="Magic Compras">
+<nav class="nav container">
+  <a routerLink="/">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ68hNWLP2h8NRy4IDkn6CkpXvJdLc3Hk3OkQ&usqp=CAU" alt="Smile shop">
+  </a>
 
-  <div class="nav-search">
+
+  <div *ngIf="menuType==='default'" class="nav-search">
     <input type="text" placeholder="Pesquisar Produtos">
     <button>Pesquisar</button>
   </div>
-  <ul>
-    <li><a routerLink="/">Home</a></li>
-    <li><a routerLink="/seller-auth">Vendedor</a></li>
-    <li><a href="#">Login</a></li>
-    <li><a href="#">Carrinho(0)</a></li>
-  </ul>
-
+  <div  [ngSwitch]="menuType">
+    <ul *ngSwitchCase="'default'">
+      <li><a routerLink="seller-auth">Vendedor</a></li>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Login</a></li>
+      <li><a href="#">Carrinho(0)</a></li>
+    </ul>
+    <ul *ngSwitchCase="'seller'">
+      <li><a routerLink="seller-auth">Lista De Produtos</a></li>
+      <li><a routerLink="">Add Produtos</a></li>
+      <li><a (click)="logout()">Sair</a></li>
+      <li><a href="#">{{ sellerName | titlecase }}</a></li>
+    </ul>
+  </div>
 </nav>
 

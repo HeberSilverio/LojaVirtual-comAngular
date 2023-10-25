@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { SellerService } from '../services/seller.service';
-import { Router } from '@angular/router'
-import { SignUp } from '../data-types';
+import { signUp } from '../data-types';
 
 @Component({
   selector: 'app-seller-auth',
@@ -9,20 +8,29 @@ import { SignUp } from '../data-types';
   styleUrls: ['./seller-auth.component.css']
 })
 export class SellerAuthComponent implements OnInit {
+  showLogin = false;
+  authError:String='';
   constructor(private seller:SellerService) { }
-  MostrarLogin = false
 
   ngOnInit():void{
     this.seller.reloadSeller()
   }
-
-  signUp(data:SignUp):void{
-    this.seller.userSignUp(data)
+  signUp(data: signUp): void{
+    console.warn(data);
+    this.seller.userSignUp(data);
+  }
+  login(data: signUp): void{
+    this.seller.userLogin(data);
+    this.seller.isLoginError.subscribe((isError)=>{
+      if(isError){
+        this.authError="Email ou senha não correspondente!";
+      }
+    })
   }
   openLogin(){
-   this.MostrarLogin = true
+   this.showLogin = true
   }
   openSignUp(){
-   this.MostrarLogin=false
+   this.showLogin=false
   }
 }
