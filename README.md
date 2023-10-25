@@ -33,6 +33,6 @@ ng g c <nome do componente>
 ```
 ng g guard auth
 ``` 
-![texto](imagem)
+![Loja](https://raw.githubusercontent.com/HeberSilverio/LojaVirtual-comAngular/develop/loja-online/src/img/print-loja.png)
 
 
