@@ -35,6 +35,3 @@ ng g guard auth
 ``` 
 
 
-
-Parei 1:07:10
-https://youtu.be/CF59AuAKI6o?si=yHF0mEvxsFkZtWB6
