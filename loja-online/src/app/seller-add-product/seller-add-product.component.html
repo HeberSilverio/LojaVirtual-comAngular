@@ -1,0 +1,29 @@
+<section class="add-product">
+  <h1>Cadastro de produtos</h1>
+  <form #addProduct="ngForm" class="formulario">
+    <div class="itens-formulario">
+        <div class="product-data">
+
+          <label class="form-rotulo">Nome do produto<span>*</span></label>
+          <input type="text" class="form-input" ngModel name="name" placeholder="Nome do produto">
+
+          <label class="form-rotulo">Descrição do produto<span>*</span></label>
+          <textarea type="text" class="form-input" ngModel name="description-product" placeholder="Descrição do produto"></textarea>
+
+          <label class="form-rotulo">REF<span>*</span></label>
+          <input type="text" class="form-input" ngModel name="ref-product" placeholder="Referência do produto">
+
+          <label class="form-rotulo">Preço(R$)<span>*</span></label>
+          <input type="text" class="form-input" ngModel name="price-product" placeholder="Preço do produto">
+
+          <label class="form-rotulo">Cores<span>*</span></label>
+          <input type="text" class="form-input" ngModel name="color-product" placeholder="Cor do produto">
+
+          <label class="form-rotulo">Categorias de produto<span>*</span></label>
+          <input type="text" class="form-input" ngModel name="category-product" placeholder="Categorias do produto">
+
+        </div>
+    </div>
+  </form>
+</section>
+
