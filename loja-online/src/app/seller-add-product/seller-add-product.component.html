@@ -23,8 +23,9 @@
               <div class="btn-form">
                 <button  class="btn-azul btn-azul-grande">Cadastrar Produto</button>
               </div>
-              
-              <p class="message-success text-center"> {{addProductMessage}} </p>
+              <div *ngIf="exibeMensagem" class="">
+                 <p class="message-success text-center"> {{addProductMessage}} </p>
+              </div>
         </form>
     </div>
 </section>

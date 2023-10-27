@@ -9,6 +9,7 @@ import { product } from '../data-types';
 })
 export class SellerAddProductComponent implements OnInit {
   addProductMessage:string | undefined;
+  exibeMensagem = false; 
   constructor(private product:ProductService) { }
 
   ngOnInit(): void {
@@ -17,9 +18,13 @@ export class SellerAddProductComponent implements OnInit {
   submit(data:product){
     this.product.addProduct(data).subscribe((result)=>{
       if(result){
-        this.addProductMessage="Produto cadastrado com sucesso!";
+         this.exibeMensagem=true;
+         this.addProductMessage="Produto cadastrado com sucesso!";
       }
-      setTimeout(()=>(this.addProductMessage=undefined),5000);
+      setTimeout(()=>{
+         this.addProductMessage=undefined
+         this.exibeMensagem=false
+         },10000);
     });
   }
 }
