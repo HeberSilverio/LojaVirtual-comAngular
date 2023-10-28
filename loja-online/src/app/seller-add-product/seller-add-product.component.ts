@@ -9,7 +9,7 @@ import { product } from '../data-types';
 })
 export class SellerAddProductComponent implements OnInit {
   addProductMessage:string | undefined;
-  exibeMensagem = false; 
+  exibeMensagem:boolean = false;
   constructor(private product:ProductService) { }
 
   ngOnInit(): void {
@@ -24,7 +24,7 @@ export class SellerAddProductComponent implements OnInit {
       setTimeout(()=>{
          this.addProductMessage=undefined
          this.exibeMensagem=false
-         },10000);
+         },5000);
     });
   }
 }

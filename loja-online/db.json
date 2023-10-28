@@ -16,66 +16,30 @@
   "products": [
     {
       "name": "Telefone celular",
-      "description-product": "50 milhões de câmeras duplas ultra nítidas, 5 milhões de retratos frontais, cada detalhe é um destaque Imagem ultra nítida de 50 milhões de pixels",
-      "price-product": "1800",
-      "color-product": "azul",
-      "category-product": "xiaomi",
-      "image-product": "https://m.media-amazon.com/images/I/51cU7HevYPL._AC_UF1000,1000_QL80_.jpg",
+      "description": "50 milhões de câmeras duplas ultra nítidas",
+      "price": "1800",
+      "color": "azul",
+      "category": "xiaomi",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXG-gDCF5gzE4N4-nxjHTfdVyK8gU0OvOqUw&usqp=CAU",
       "id": 1
     },
     {
       "name": "Carrinho",
-      "description-product": "carinho de brinquedo",
-      "price-product": "100",
-      "color-product": "verde",
-      "category-product": "brinquedo",
-      "image-product": "http://google.com",
+      "description": "carinho de brinquedo",
+      "price": "100",
+      "color": "verde",
+      "category": "brinquedo",
+      "image": "https://ae04.alicdn.com/kf/S54ebce942116476aa0da0971ce249a72w/Toy-Car-Large-Size-City-Construction-Engineering-Vehicle-Children-Excavator-Truck-Sand-Digging-Toys-Kids-Toy.jpg_220x220xz.jpg_.webp",
       "id": 2
     },
     {
-      "name": "Carrinho",
-      "description-product": "carinho de brinquedo",
-      "price-product": "100",
-      "color-product": "verde",
-      "category-product": "brinquedo",
-      "image-product": "http://google.com",
-      "id": 3
-    },
-    {
       "name": "bola",
-      "description-product": "minha pequena bola",
-      "price-product": "10",
-      "color-product": "azul",
-      "category-product": "brinquedo",
-      "image-product": "http://google.com",
+      "description": "minha pequena bola",
+      "price": "10",
+      "color": "azul",
+      "category": "brinquedo",
+      "image": "http://google.com",
       "id": 4
-    },
-    {
-      "name": "lanterna",
-      "description-product": "lanterna para mata",
-      "price-product": "100",
-      "color-product": "preto",
-      "category-product": "ferramentas",
-      "image-product": "http://google.com",
-      "id": 5
-    },
-    {
-      "name": "goiaba",
-      "description-product": "fruta",
-      "price-product": "10",
-      "color-product": "vermelho",
-      "category-product": "doce",
-      "image-product": "doce.com",
-      "id": 6
-    },
-    {
-      "name": "maça",
-      "description-product": "delicia de fruta",
-      "price-product": "1",
-      "color-product": "azul",
-      "category-product": "fruta",
-      "image-product": "doce.com",
-      "id": 7
     }
   ]
 }

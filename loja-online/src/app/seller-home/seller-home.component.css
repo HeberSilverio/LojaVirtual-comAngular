@@ -1,0 +1,20 @@
+.home-list-product{
+  background-color: rgb(255, 255, 251);
+}
+table{
+  border-collapse: collapse;
+
+}
+table td, table th{
+  border: 1px solid #7575753a;
+  min-height: 150px;
+  text-align: center;
+}
+img{
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+.description-product{
+  text-align: left !important;
+}

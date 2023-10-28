@@ -1,4 +1,33 @@
-<section class="container">
-   <p>Esta é a página home dos vendedores!</p>
+<section class=" container home-list-product">
+  <h1>Todos os produtos</h1>
+  <p *ngIf="exibeMensagemDelete" class="message-success"> {{productMessageDelete}} </p>
+  <div class="table-responsive" >
+   <table class="table table-hover">
+      <thead >
+          <tr scope="thead-light">
+              <th >ID</th>
+              <th >Foto</th>
+              <th >Nome</th>
+              <th >Preço</th>
+              <th >Cor</th>
+              <th >Categoria</th>
+              <th >Descrição</th>
+              <th >Ação</th>
+          </tr>
+      </thead>
+      <tbody >
+        <tr  *ngFor="let item of productList">
+          <td > {{item.id}} </td>
+          <td > <img src="{{item.image}}" alt="{{item.name}}"> </td>
+          <td > {{item.name}} </td>
+          <td > {{item.price}} </td>
+          <td > {{item.color}} </td>
+          <td > {{item.category}} </td>
+          <td > {{item.description}} </td>
+          <td > <button (click)="deleteProduct(item.id)">Deletar</button> </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 
 </section>
