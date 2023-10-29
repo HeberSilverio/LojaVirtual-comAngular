@@ -9,19 +9,22 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The appli
 
 ### Para utilizar um banco de dados local
 
+| Comando                         | O que faz?                  | Observação                     |
+| ------------------------------- | --------------------------- | ------------------------------ |
+| `npm install -g json-server`    | Instala pacotes necessários |                                |
+| `json-server --watch db.json`   | **Executa o banco de dados**|                                |
+|                                 |                             |                                |
+
 Instale o banco de dados json local com o seguinte comando:
 
-```
-npm install -g json-server
-```
+    npm install -g json-server
 
 Para interagir com o banco de dados de forma visual uilize a ferramenta 'Postman'.
 [Site Postman](https://www.postman.com/)
 
 ### Para rodar o servidor json local:
-```
-json-server --watch db.json
-```
+ 
+    json-server --watch db.json
 
 ## INTERAGINDO COM ANGULAR
 

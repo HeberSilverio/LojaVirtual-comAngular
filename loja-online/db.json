@@ -33,13 +33,13 @@
       "id": 2
     },
     {
-      "name": "bola",
-      "description": "minha pequena bola",
-      "price": "10",
-      "color": "azul",
-      "category": "brinquedo",
-      "image": "http://google.com",
-      "id": 4
+      "name": "Bola",
+      "description": "bolinha",
+      "price": "123",
+      "color": "vde",
+      "category": "cde",
+      "image": "cdes",
+      "id": 3
     }
   ]
 }
