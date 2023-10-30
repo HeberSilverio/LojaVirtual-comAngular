@@ -7,7 +7,6 @@ import { AuthGuard } from "./auth.guard";
 import { SellerAddProductComponent } from "./seller-add-product/seller-add-product.component";
 import { SellerUpdateProductComponent } from "./seller-update-product/seller-update-product.component";
 import { MenuComponent } from "./menu/menu.component";
-
 const routes: Routes = [
   {
     component: HomeComponent,
