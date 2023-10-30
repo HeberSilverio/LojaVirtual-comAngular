@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ProductService } from '../services/product.service';
 import { product } from '../data-types';
+import { faTrash,faEdit } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-seller-home',
@@ -11,6 +12,8 @@ export class SellerHomeComponent implements OnInit {
   productList:undefined | product[]
   productMessageDelete:undefined | string;
   exibeMensagemDelete:boolean = false;
+  deleteIcon=faTrash;
+  editIcon=faEdit;
 
   constructor(private product:ProductService) { }
 

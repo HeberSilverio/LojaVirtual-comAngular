@@ -1,0 +1,38 @@
+<section class="update-product container">
+  <h1 class="text-center">Editar produtos</h1>
+
+    <div class="itens-formulario ">
+        <form #addProduct="ngForm" (ngSubmit)="submit(addProduct.value)" class="formulario">
+
+              <input type="text" class="form-input form-control"
+              ngModel="{{productData?.name}}" name="name" placeholder="Nome do produto">
+
+
+              <textarea type="text" class="form-input form-control "
+              ngModel="{{productData?.description}}" name="description" placeholder="Descrição do produto" rows="3"></textarea>
+
+              <input type="text" class="form-input form-control"
+              ngModel="{{productData?.price}}" name="price" placeholder="Preço do produto (R$)">
+
+
+              <input type="text" class="form-input form-control"
+              ngModel="{{productData?.color}}" name="color" placeholder="Cor do produto">
+
+
+              <input type="text" class="form-input form-control"
+              ngModel="{{productData?.category}}" name="category" placeholder="Categorias do produto">
+
+
+              <input type="text" class="form-input form-control"
+              ngModel="{{productData?.image}}" name="image" placeholder="Url da img do produto">
+
+              <div class="btn-form">
+                <button  class="btn-azul btn-azul-grande">Atualizar Produto</button>
+              </div>
+              <div *ngIf="exibeMessageAtualizar" class="">
+                 <p class="message-success text-center"> {{editProductMessage}} </p>
+              </div>
+        </form>
+    </div>
+</section>
+
