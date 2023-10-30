@@ -73,3 +73,28 @@ body{
   font-size: 1rem;
   padding: 10px 30px;
 }
+.itens-formulario{
+  display: flex;
+  justify-content: center;
+
+}
+.itens-formulario form
+{
+  display: flex;
+  flex-direction: column;
+  width: 330px;
+  box-shadow: 0 4px 12px 5px rgba(0, 0, 0, 0.08);
+  padding: 5px 10px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+.itens-formulario input, textarea {
+    color: #000000;
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 0 15px;
+    margin-top: 10px;
+    border-radius: 6px;
+}
+.form-input::placeholder {
+  color: var(--color-placeholder);
+}
