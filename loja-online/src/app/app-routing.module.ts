@@ -5,11 +5,16 @@ import { SellerAuthComponent } from "./seller-auth/seller-auth.component";
 import { SellerHomeComponent } from "./seller-home/seller-home.component";
 import { AuthGuard } from "./auth.guard";
 import { SellerAddProductComponent } from "./seller-add-product/seller-add-product.component";
+import { MenuComponent } from "./menu/menu.component";
 
 const routes: Routes = [
   {
     component: HomeComponent,
     path:'',
+  },
+  {
+   path:'menu',
+   component:MenuComponent 
   },
   {
     component: SellerAuthComponent,
