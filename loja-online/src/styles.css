@@ -13,8 +13,14 @@
   --Blue:blue;
   --Off-Blue:#2F1AC4;
   --Pantone-Purple: #E1CEF5;
+
+  --bg-primary-blue:#1877f2;
+  --bg-primary-blue-hover:#1147fc;
+  --bg-primary-verde:#154551;
+  --bg-primary-verde-hover:#113640;
+  --bg-secundary-verde:#a3cfbb;;
   --color-placeholder: #9abad3;
-  --background-color: #d1e7dd;
+  --bg-primary-light: #d1e7dd;
 }
 
 
@@ -31,28 +37,28 @@ body{
 }
 /* no minuto 2:44 tem estilização de css */
 .btn-azul{
-  background-color: var(--bs-primary-blue);
+  background-color: var(--bg-primary-blue);
   color: #fff;
   padding: 5px 10px;
   border-radius: 5px;
   text-transform:uppercase ;
   margin-top: 15px;
-  border-color: var(--bs-primary-blue) !important;
+  border-color: var(--bg-primary-blue) !important;
 }
 
 .btn-azul:hover{
-  background-color: #1147fc;
+  background-color: var(--bg-primary-blue-hover);
   border-color: #ffffff;
 }
 .btn-verde{
-  background-color: #154551;
+  background-color: var(--bg-primary-verde) ;
   color: #fff;
   padding: 10px 15px;
   border-radius: 5px;
   text-transform:uppercase ;
 }
  .btn-verde:hover{
-  background-color: #113640;
+  background-color: var(--bg-primary-verde-hover) ;
 }
 .btn-azul-grande{
   width: 100%;
@@ -69,8 +75,8 @@ body{
 }
 .message-success {
   color: #0a3622;
-  background-color: #d1e7dd;
-  border: 1px solid #a3cfbb;
+  background-color: var(--bg-primary-light);
+  border: 1px solid var(--bg-secundary-verde);
   font-size: 1rem;
   padding: 10px 30px;
 }
