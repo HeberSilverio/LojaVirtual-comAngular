@@ -1,66 +1,38 @@
-
 .section-menu-topo{
   background-color: var(--Purple);
-  height: 70px;
-  border-top-right-radius: 20px;
-  border-top-left-radius: 20px;
+  height: 40px;
   margin-bottom: 50px;
 }
-.logo{
-   flex:20%;
-   margin-left:10%;
-    /* border:1px solid red;  */
-   text-align: left;
+.items-do-topo{
+ display: flex;  
+ flex-direction: row;
+ justify-content: space-between;
+ padding-top: 5px;
 }
-
-.logo h1{
-   font-family: 'Lobster', cursive;
-   color:#180F4A;
-   font-size:34px;
-}
-
-.menu{
-   flex:70%;
-  /* border:1px solid green;*/
-   text-align:right;
-   padding:20px;
-}
-
-.menu a{
-   color:#180F4A;
+.items-do-topo a {
+   color: #fff;
+   padding: 0px 10px;
    text-decoration: none;
-   font-size:20px;
-   padding:20px 16px;
 }
-
-.menu a:hover{
-   color:#FF2978;
-   border-top:4px solid #180F4A;
+.items-do-topo svg{
+   color: #fff;
 }
-
-#botao{
-   background: #180F4A;
-   padding: 10px 25px;
-   color:white;
-   border-radius:5px;
-   margin-right:10%;
-   margin-left:5%;
+.items-do-topo ul{
+   display: flex;
+   flex-direction: row;
 }
-
-#botao:hover{
-   border:none;
-   background: #FF2978;
+.items-do-topo li{
+   display: flex;
+   flex-direction: row;
+   margin-right: 10px;
 }
-
-@media screen and (max-width:1005px){
-   .navbar{
-       position: relative;
-   }
-   .menu{
-       display: none;
-   }
-   .logo{
-       margin:0;
-       text-align:center;
-   }
+svg {
+   fill: #fff;
+} 
+.menu-superior span{
+   margin-right: 5px;
 }
+.menu-superior a:hover{
+   color:var(--Red);
+}
+   
