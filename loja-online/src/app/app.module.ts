@@ -13,6 +13,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { MenuComponent } from './menu/menu.component';
 import { SellerUpdateProductComponent } from './seller-update-product/seller-update-product.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { CarrosselBootstrapComponent } from './carrossel-bootstrap/carrossel-bootstrap.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     SellerAddProductComponent,
     MenuComponent,
     SellerUpdateProductComponent,
-    
+    CarrosselBootstrapComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -33,7 +35,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     HttpClientModule,
     FontAwesomeModule,
     NgbModule,
-       
+
   ],
   providers: [],
   bootstrap: [AppComponent],

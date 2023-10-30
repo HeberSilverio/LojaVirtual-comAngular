@@ -39,8 +39,8 @@ ng g guard auth
 #### Como trabalhar com bootstrap no angular
 
 
-[Documentação](https://ng-bootstrap.github.io/#/home)
-Veja neste [vídeo](https://www.youtube.com/watch?v=CF59AuAKI6o&t=5435s) no minuto 5:30:20 até o minuto 5:38:23
+Para Angular: [Documentação do bootstrap](https://ng-bootstrap.github.io/#/home) <br>
+Aprenda neste [vídeo deste link](https://www.youtube.com/watch?v=CF59AuAKI6o&t=5435s) no minuto 5:30:20 até o minuto 5:38:23
 
 | Comando                                 | O que faz?                      |
 | --------------------------------------- | ------------------------------- |

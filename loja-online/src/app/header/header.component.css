@@ -7,6 +7,12 @@
   --Dourado:#ffd700;
   --Azul:#0401fe;
 }
+.logo-menu-topo{
+  text-decoration: none;
+}
+.section-menu{
+  background-color: #ffffff;
+}
 .nav{
   display: flex;
   justify-content: space-between;

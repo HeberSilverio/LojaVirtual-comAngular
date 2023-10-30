@@ -1,23 +1,10 @@
-/* *{
-   box-sizing: border-box;
+.section-menu-topo{
+  background-color: var(--Purple);
+  height: 70px;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  margin-bottom: 50px;
 }
-
-body{
-   margin:0;
-   font-family: 'Roboto', sans-serif;
-} */
-
-/* .navbar{
-   display: flex;
-   flex-flow: row wrap;
-   height: 100px;
-   background: white;
-   justify-content: center;
-   align-items: center;
-   position:fixed;
-   width: 100%;
-} */
-
 .logo{
    flex:20%;
    margin-left:10%;
@@ -42,7 +29,7 @@ body{
    color:#180F4A;
    text-decoration: none;
    font-size:20px;
-   padding:20px 16px; 
+   padding:20px 16px;
 }
 
 .menu a:hover{
