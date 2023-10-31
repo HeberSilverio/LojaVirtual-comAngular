@@ -1,7 +1,6 @@
 .section-menu-topo{
   background-color: var(--Purple);
   height: 40px;
-  margin-bottom: 50px;
 }
 .items-do-topo{
  display: flex;  

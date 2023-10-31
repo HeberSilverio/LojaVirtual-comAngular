@@ -7,62 +7,25 @@
   --Dourado:#ffd700;
   --Azul:#0401fe;
 }
-.logo-menu-topo{
-  text-decoration: none;
-}
 .section-menu{
-  background-color: #ffffff;
+   background-color: #dcf11b;
+   height: 70px;
+}
+.logo-menu-topo h1{
+   color: var(--Navy-Blue) !important;
 }
 .nav{
-  display: flex;
-  justify-content: space-between;
-  margin-top: 15px;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+ }
+.nav a {
+   text-decoration: none;
 }
-.nav a img{
-  max-width: 100px;
-  border-radius: 10px;
-}
-.nav ul
-{
-  display: inline-flex;
-  list-style-type: none;
-}
-.nav li {
-  display: flex;
-  align-items: center;
-  padding-right: 15px;
-}
-.nav li a{
-  text-decoration: none;
-  color: var(--Roxo);
-  text-transform: uppercase;
-  font-weight: 500;
-}
-.nav .nav-search{
-  display: flex;
-  align-items: center;
-  flex: 1;
-  margin-left: 5%;
-  margin-right: 5%;
-}
-.nav .nav-search input{
-  flex: 1;
-  color: var(--Roxo);
-  border: 1px solid var(--Roxo);
-  height: 35px;
-  border-right: 0px;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
-  padding: 5px;
-}
-.nav .nav-search button{
-  flex: 1;
-  color: var(--Roxo);
-  border: 1px solid var(--Roxo);
-  height: 35px;
-  border-left: 0px;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
-  padding: 5px;
+.nav ul{
+   display: flex;
+   list-style-type: none;
+   margin-bottom: 0 !important;
 }
 
