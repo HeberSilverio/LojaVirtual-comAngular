@@ -20,7 +20,7 @@
       "price": "1800",
       "color": "azul",
       "category": "xiaomi",
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXG-gDCF5gzE4N4-nxjHTfdVyK8gU0OvOqUw&usqp=CAU",
+      "image": "https://raw.githubusercontent.com/HeberSilverio/LojaVirtual-comAngular/develop/loja-online/src/img/cliclo-de-feedback-loop.png",
       "id": 1
     },
     {
@@ -40,6 +40,24 @@
       "category": "cde",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRffcpzfNapw3qmcEY1B7TP1IxOzWniK9F1fw&usqp=CAU",
       "id": 3
+    },
+    {
+      "name": "Bola",
+      "description": "Bola de campo",
+      "price": "10",
+      "color": "branco",
+      "category": "Esportes",
+      "image": "https://raw.githubusercontent.com/HeberSilverio/LojaVirtual-comAngular/develop/loja-online/src/img/bola.jpg",
+      "id": 4
+    },
+    {
+      "name": "Bola",
+      "description": "Bola profissional",
+      "price": "20",
+      "color": "White",
+      "category": "Esportes",
+      "image": "https://raw.githubusercontent.com/HeberSilverio/LojaVirtual-comAngular/develop/loja-online/src/img/bola.jpg",
+      "id": 5
     }
   ]
 }

@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NgbCarouselConfig, NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
+import { product } from '../data-types';
+import { ProductService } from '../services/product.service';
 
 @Component({
   selector: 'app-carrossel-bootstrap',
@@ -10,10 +12,9 @@ import { NgbCarouselConfig, NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap
 
 })
 export class CarrosselBootstrapComponent implements OnInit {
-  images = [700, 533, 807, 124].map((n) => `https://picsum.photos/id/${n}/900/500`);
+  popularProducts:any | product;
 
-
-  constructor(config: NgbCarouselConfig) {
+  constructor(config: NgbCarouselConfig, private product:ProductService) {
     // customize default values of carousels used by this component tree
 		config.interval = 10000;
 		config.wrap = false;
@@ -22,6 +23,9 @@ export class CarrosselBootstrapComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.product.popularProducts().subscribe((data)=>{
+      this.popularProducts=data;
+    })
   }
 
 }
