@@ -24,6 +24,8 @@
   --bg-secundary-verde:#a3cfbb;;
   --color-placeholder: #9abad3;
   --bg-primary-light: #d1e7dd;
+  --btn-green: rgb(89, 192, 11);
+  --btn-green-hover: rgb(71, 153, 8);;
 }
 
 
@@ -40,34 +42,70 @@ body{
   background-color: #ffffff;
 }
 /* no minuto 2:44 tem estilização de css */
+.btn{
+  min-height: 30px;
+
+}
 .btn-azul{
   background-color: var(--bg-primary-blue);
   color: #fff;
-  padding: 5px 10px;
   border-radius: 5px;
   text-transform:uppercase ;
-  margin-top: 15px;
-  border-color: var(--bg-primary-blue) !important;
+  border-color: transparent !important;
 }
-
 .btn-azul:hover{
   background-color: var(--bg-primary-blue-hover);
+  color: #e7e6e6;
+}
+.btn-pink{
+  background-color: var(--Pink);
+  color: #fff;
+  padding: 10px 10px;
+  border-radius: 5px;
+  text-transform:capitalize;
+  margin-top: 15px;
+  border-color: transparent !important;
+}
+.btn-pink:hover{
+  background-color: var(--Red);
   border-color: #ffffff;
 }
 .btn-verde{
   background-color: var(--bg-primary-verde) ;
   color: #fff;
-  padding: 10px 15px;
+  /* padding: 7px 10px; */
   border-radius: 5px;
-  text-transform:uppercase ;
+  text-transform:capitalize;
+  border-color: transparent !important;
 }
  .btn-verde:hover{
-  background-color: var(--bg-primary-verde-hover) ;
+  background-color: var(--bg-primary-verde-hover);
+  color: #e7e6e6;
 }
 .btn-azul-grande{
   width: 100%;
   color: #fff !important;
-
+}
+.btn-green{
+  text-decoration: none;
+  font-size: 16px;
+  background-color: rgb(89, 192, 11);
+  color: rgb(254, 254, 254);
+  border-color: transparent !important;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+.btn-green:hover{
+  background-color: var(--btn-green-hover);
+}
+.text-green{
+  color: rgb(89, 192, 11);
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.text-green:hover{
+  color: var(--btn-green-hover);
+  font-weight: 700;
 }
 .message-error {
   background: rgba(255, 0, 0, 0.03);

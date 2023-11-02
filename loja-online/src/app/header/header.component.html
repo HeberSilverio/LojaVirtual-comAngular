@@ -2,6 +2,33 @@
 
 <section class="section-menu">
   <nav class="nav container">
+    <a class="logo-menu-topo" routerLink="/">
+       <h1>Hekto</h1>
+    </a>
+    <div *ngIf="menuType==='default'" class="nav-search">
+       <input type="text" #searchInput (keyup)="searchProducts($event)" (blur)="hideSearch()" placeholder="Pesquisar Produtos">
+       <button (click)="submitSearch(searchInput.value)">Pesquisar</button>
+       <ul class="suggested-search" *ngIf="searchResult">
+        <li *ngFor="let item of searchResult">
+          <a href="#">{{item.name}}</a>
+        </li>
+       </ul>
+    </div>
+    <div  [ngSwitch]="menuType">
+       <ul *ngSwitchCase="'default'">
+          <li><a routerLink="seller-auth">Vendedor</a></li>
+          <li><a href="#">Home </a></li>
+          <li><a href="#">Login</a></li>
+          <li><a href="#">Carrinho(0)</a></li>
+       </ul>
+       <ul *ngSwitchCase="'seller'">
+          <li><a routerLink="seller-add-product">Add Produtos</a></li>
+          <li><a routerLink="/seller-home">Lista De Produtos</a></li>
+          <li><a (click)="logout()">Sair</a></li>
+          <li><a href="#">{{ sellerName | titlecase }}</a></li>
+       </ul>
+   </div>
+ </nav>
       <div class="">
          <a class="logo-menu-topo" routerLink="/">
             <h1>Hekto</h1>

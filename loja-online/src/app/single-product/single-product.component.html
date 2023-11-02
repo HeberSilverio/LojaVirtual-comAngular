@@ -1,0 +1,70 @@
+<section class="section-single-product container">
+  <div class="row" >
+    <div class="product-details" *ngIf="productData">
+      <div class="col-sm-1 col-md-6 col-lg-6">
+        <div class="product-single-image">
+          <a routerLink="/details/{{productData.id}}">
+            <img src="{{productData.image}}" alt="{{productData.name}}">
+          </a>
+        </div>
+      </div>
+      <div class="col-sm-1 col-md-6 col-lg-6 search-item-detail">
+        <div class="product-item-detail">
+          <div class="product-item-category">
+            <span class="">{{productData.category}}</span>
+          </div>
+          <div class="product-item-detail-name">
+            <h6> {{productData.name}} </h6>
+          </div>
+          <div class="product-item-price">
+            <h4>R$ {{productData.price}}</h4>
+            <span class="product-item-price-installments">em 10x R$ {{productData.price/10}}</span>
+          </div>
+          <div class="product-item-color">
+            <span [style.backgroundColor]="productData.color" class="product-color">Cores disponíveis: {{productData.color}}</span>
+          </div>
+          <div class="product-item-description">
+            <span class="">{{productData.description}}</span>
+          </div>
+          <div class="product-item-carrinho">
+            <button class="btn btn-azul">Comprar</button>
+            <button class="btn btn-green ">Remover Produto</button>
+            <button class="btn btn-verde">🛄 Adicionar ao carrinho</button>
+          </div>
+          <div class="quantity-group">
+            <button> ➖ </button>
+            <input type="text" value="1">
+            <button> ➕ </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section-products-related container">
+  <h2>Produtos relacionados</h2>
+  <div class="row">
+    <div class="col-sm-1 col-md-6 col-lg-3" *ngFor="let item of FeaturedProducts">
+      <div class="product-item">
+        <a href="#">
+          <div class="product-item-image">
+            <img src="{{item.image}}" alt="lorem1">
+          </div>
+          <hr>
+          <div class="product-item-detail">
+            <div class="product-item-detail-name">
+              <h6> {{item.name}} </h6>
+            </div>
+            <div class="product-item-price">
+              <h4>R$ {{item.price}}</h4>
+              <span class="product-item-price-installments">em 10x R$ {{item.price/10}}</span>
+            </div>
+            <div class="product-item-frete">
+              <span class="text-green">Frete grátis</span>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
