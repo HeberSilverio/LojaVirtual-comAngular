@@ -3,14 +3,35 @@
 </section>
 
 <section class="container session-featured-products">
-  <h3 class="title-featured-products">Featured Products</h3>
-  <img src="https://fastly.picsum.photos/id/610/200/300.jpg?hmac=O1d50QqoBFGhSj9Hd8cdWjPlhPJEMWFE8HRsHArsnfk" alt="lorem1">
-  <img src="https://picsum.photos/id/237/200/300" alt="lorem1">
-  <img src="https://picsum.photos/200/300" alt="lorem1">
+  <h3 class="title-featured-products">Produtos Em Destaque</h3>
+  <div class="row">
+    <div class="col-sm-1 col-md-6 col-lg-3" *ngFor="let item of FeaturedProducts">
+      <div class="product-item">
+        <a href="#">
+          <div class="product-item-image">
+            <img src="{{item.image}}" alt="lorem1">
+          </div>
+          <hr>
+          <div class="product-item-detail">
+            <div class="product-item-detail-name">
+              <h6> {{item.name}} </h6>
+            </div>
+            <div class="product-item-price">
+              <h4>R$ {{item.price}}</h4>
+              <span class="product-item-price-installments">em 10x R$ {{item.price/10}}</span>
+            </div>
+            <div class="product-item-frete">
+              <span class="text-green">Frete grátis</span>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
 </section>
 
 <section class="container session-leatest-products">
-  <h3 class="title-leatest-products">Leatest Products</h3>
+  <h3 class="title-leatest-products">Baseada na sua última visita</h3>
   <img src="https://fastly.picsum.photos/id/866/200/300.jpg?hmac=rcadCENKh4rD6MAp6V_ma-AyWv641M4iiOpe1RyFHeI" alt="lorem1">
   <img src="https://fastly.picsum.photos/id/668/200/300.jpg?grayscale&hmac=aiq-8BHFhefUrWR9eD4e_z2G49NiH1UdFCC4sBdbsBg" alt="lorem1">
   <img src="https://picsum.photos/200/300" alt="lorem1">
@@ -20,10 +41,10 @@
 </section>
 
 <section class="container session-what-products">
-  <h3 class="title-what-products">What Shopex Offer!</h3>
+  <h3 class="title-what-products">Ofertas do dia!</h3>
   <img src="https://uploaddeimagens.com.br/images/004/651/068/thumb/caixa01.png?1698639680" alt="lorem1">
   <img src="https://uploaddeimagens.com.br/images/004/651/068/thumb/caixa01.png?1698639680" alt="lorem1">
   <img src="https://uploaddeimagens.com.br/images/004/651/068/thumb/caixa01.png?1698639680" alt="lorem1">
   <img src="https://uploaddeimagens.com.br/images/004/651/068/thumb/caixa01.png?1698639680" alt="lorem1">
-  
+
 </section>

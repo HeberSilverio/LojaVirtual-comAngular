@@ -1,0 +1,13 @@
+.search-item{
+  display: flex;
+  flex-direction: row;
+  margin: 25px auto;
+  width: 800px;
+  border-top: 1px solid #0000007d;
+  padding: 10px;
+}
+.search-item img{
+  height: 150px;
+  width: 100%;
+  object-fit: contain;
+}

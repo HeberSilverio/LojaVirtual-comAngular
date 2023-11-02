@@ -65,4 +65,22 @@
   border-bottom-right-radius: 5px;
   padding: 5px;
 }
+.suggested-search{
+  position: absolute;
+  top: 140px;
+  display: list-item !important;
+  z-index: 99;
+  border: 1px solid #dddddd3a;
+  background-color: #f7F7f7;
+  width: 300px;
+}
+.suggested-search ul{
+  padding-left: 0 !important;
+}
 
+.suggested-search li a
+{
+  text-transform: capitalize;
+  color: var(--Navy-Blue);
+  cursor: pointer;
+}

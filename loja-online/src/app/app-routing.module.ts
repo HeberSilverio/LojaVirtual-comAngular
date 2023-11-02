@@ -7,6 +7,8 @@ import { AuthGuard } from "./auth.guard";
 import { SellerAddProductComponent } from "./seller-add-product/seller-add-product.component";
 import { SellerUpdateProductComponent } from "./seller-update-product/seller-update-product.component";
 import { MenuComponent } from "./menu/menu.component";
+import { SearchComponent } from "./search/search.component";
+import { SingleProductComponent } from "./single-product/single-product.component";
 const routes: Routes = [
   {
     component: HomeComponent,
@@ -14,7 +16,7 @@ const routes: Routes = [
   },
   {
    path:'menu',
-   component:MenuComponent 
+   component:MenuComponent
   },
   {
     component: SellerAuthComponent,
@@ -34,7 +36,15 @@ const routes: Routes = [
     component: SellerUpdateProductComponent,
     path:'seller-update-product/:id',
     canActivate:[AuthGuard]
-  }
+  },
+  {
+    component: SearchComponent,
+    path:'search/:query',
+  },
+  {
+    component: SingleProductComponent,
+    path:'details/:productId',
+  },
 ];
 
 @NgModule({

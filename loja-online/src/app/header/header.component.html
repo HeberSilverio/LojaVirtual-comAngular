@@ -6,8 +6,13 @@
        <h1>Hekto</h1>
     </a>
     <div *ngIf="menuType==='default'" class="nav-search">
-       <input type="text" placeholder="Pesquisar Produtos">
-       <button>Pesquisar</button>
+       <input type="text" #searchInput (keyup)="searchProducts($event)" (blur)="hideSearch()" placeholder="Pesquisar Produtos">
+       <button (click)="submitSearch(searchInput.value)">Pesquisar</button>
+       <ul class="suggested-search" *ngIf="searchResult">
+        <li *ngFor="let item of searchResult">
+          <a href="#">{{item.name}}</a>
+        </li>
+       </ul>
     </div>
     <div  [ngSwitch]="menuType">
        <ul *ngSwitchCase="'default'">

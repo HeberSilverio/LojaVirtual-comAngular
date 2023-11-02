@@ -15,48 +15,48 @@
   ],
   "products": [
     {
-      "name": "Telefone celular",
-      "description": "50 milhões de câmeras duplas ultra nítidas",
-      "price": "1800",
+      "name": "Encaixe de madeira",
+      "description": "Encaixe de madeira infantil",
+      "price": "129.50",
       "color": "azul",
-      "category": "xiaomi",
-      "image": "https://raw.githubusercontent.com/HeberSilverio/LojaVirtual-comAngular/develop/loja-online/src/img/cliclo-de-feedback-loop.png",
+      "category": "Briquedo",
+      "image": "https://raw.githubusercontent.com/HeberSilverio/LojaVirtual-comAngular/feature/heber/loja-online/src/img/Produtos/baby-5953965_640.jpg",
       "id": 1
     },
     {
       "name": "Carrinho",
-      "description": "carinho de brinquedo",
-      "price": "100",
-      "color": "verde",
+      "description": "ferramentas de praia",
+      "price": "99.90",
+      "color": "vermelho",
       "category": "brinquedo",
-      "image": "https://ae04.alicdn.com/kf/S54ebce942116476aa0da0971ce249a72w/Toy-Car-Large-Size-City-Construction-Engineering-Vehicle-Children-Excavator-Truck-Sand-Digging-Toys-Kids-Toy.jpg_220x220xz.jpg_.webp",
+      "image": "https://raw.githubusercontent.com/HeberSilverio/LojaVirtual-comAngular/feature/heber/loja-online/src/img/Produtos/bucket-1005891_640.jpg",
       "id": 2
     },
     {
-      "name": "Bola",
-      "description": "bolinha",
-      "price": "123",
-      "color": "vde",
-      "category": "cde",
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRffcpzfNapw3qmcEY1B7TP1IxOzWniK9F1fw&usqp=CAU",
+      "name": "Ursinho",
+      "description": "Urso de pelúcia amarelo",
+      "price": "147",
+      "color": "Amarelo",
+      "category": "Briquedo",
+      "image": "https://raw.githubusercontent.com/HeberSilverio/LojaVirtual-comAngular/feature/heber/loja-online/src/img/Produtos/child-1051288_640.jpg",
       "id": 3
     },
     {
-      "name": "Bola",
-      "description": "Bola de campo",
-      "price": "10",
-      "color": "branco",
-      "category": "Esportes",
-      "image": "https://raw.githubusercontent.com/HeberSilverio/LojaVirtual-comAngular/develop/loja-online/src/img/bola.jpg",
+      "name": "Girafa de rodinha",
+      "description": "Girafa de rodinha amarela",
+      "price": "101.90",
+      "color": "Amarelo",
+      "category": "Briquedo",
+      "image": "https://raw.githubusercontent.com/HeberSilverio/LojaVirtual-comAngular/feature/heber/loja-online/src/img/Produtos/giraffe-1371203_640.jpg",
       "id": 4
     },
     {
-      "name": "Bola",
-      "description": "Bola profissional",
+      "name": "Spinner",
+      "description": "Dois pinners",
       "price": "20",
       "color": "White",
-      "category": "Esportes",
-      "image": "https://raw.githubusercontent.com/HeberSilverio/LojaVirtual-comAngular/develop/loja-online/src/img/bola.jpg",
+      "category": "Briquedo",
+      "image": "https://raw.githubusercontent.com/HeberSilverio/LojaVirtual-comAngular/feature/heber/loja-online/src/img/Produtos/hand-2601923_640.jpg",
       "id": 5
     }
   ]

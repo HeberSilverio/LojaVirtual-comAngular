@@ -14,6 +14,8 @@ import { MenuComponent } from './menu/menu.component';
 import { SellerUpdateProductComponent } from './seller-update-product/seller-update-product.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CarrosselBootstrapComponent } from './carrossel-bootstrap/carrossel-bootstrap.component';
+import { SearchComponent } from './search/search.component';
+import { SingleProductComponent } from './single-product/single-product.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +28,8 @@ import { CarrosselBootstrapComponent } from './carrossel-bootstrap/carrossel-boo
     MenuComponent,
     SellerUpdateProductComponent,
     CarrosselBootstrapComponent,
+    SearchComponent,
+    SingleProductComponent,
 
   ],
   imports: [

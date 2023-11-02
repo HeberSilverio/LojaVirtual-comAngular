@@ -1,0 +1,35 @@
+<div class="section-search container">
+  <div class="row">
+    <div class="search-item" *ngFor="let item of searchResult">
+      <div class="col-sm-1 col-md-3 col-lg-3">
+        <div class="product-item-image">
+          <a routerLink="/details/{{item.id}}">
+            <img src="{{item.image}}" alt="{{item.name}}">
+          </a>
+        </div>
+      </div>
+      <div class="col-sm-1 col-md-9 col-lg-9 search-item-detail">
+        <div class="product-item-detail">
+          <div class="product-item-category">
+            <span class="">{{item.category}}</span>
+          </div>
+          <div class="product-item-detail-name">
+            <h6> {{item.name}} </h6>
+          </div>
+          <div class="product-item-price">
+            <h4>R$ {{item.price}}</h4>
+            <span class="product-item-price-installments">em 10x R$ {{item.price/10}}</span>
+          </div>
+          <div class="product-item-color">
+            <span class="">Cores disponíveis: {{item.color}}</span>
+          </div>
+          <div class="product-item-description">
+            <span class="">{{item.description}}</span>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
