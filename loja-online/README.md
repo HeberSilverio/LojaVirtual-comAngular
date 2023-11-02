@@ -11,9 +11,14 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The appli
 
 | Comando                         | O que faz?                  |
 | ------------------------------- | --------------------------- |
-| `npm install -g json-server`    | Instala pacotes necessários | 
+
+|                                 |                             |
 | `json-server --watch db.json`   | **Executa o banco de dados**|
 |                                 |                             |
+|                                 |                             |
+|                                 |                             |
+|  Para instalar utilize          | o comando abaixo:           |
+| `npm install -g json-server`    | Instala pacotes necessários | 
 
 Instale o banco de dados json local com o seguinte comando:
 
