@@ -3,17 +3,18 @@ import { Router } from '@angular/router';
 import { ProductService } from '../services/product.service';
 import { product } from '../data-types';
 
-
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.css']
+  styleUrls: ['./header.component.css'],
+
 })
 export class HeaderComponent implements OnInit {
   menuType: String='default';
   sellerName: string='';
   TitleCasePipe: any;
   searchResult:any|product;
+   isCollapsed = false;
 
   constructor(private route:Router, private product:ProductService) { }
 
@@ -56,4 +57,5 @@ export class HeaderComponent implements OnInit {
   submitSearch(val:string){
     this.route.navigate([`search/${val}`])
   }
+  
 }
