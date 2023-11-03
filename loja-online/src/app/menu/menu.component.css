@@ -48,9 +48,18 @@ svg {
       justify-content: center;
    }
 }
-@media screen and (max-width: 760px){
+
+
+@media (min-width:452px) and (max-width: 770px){
    .info-top {
-      font-size: 12px;
+      font-size: 14px;
    }
+   .menu-superior{
+      font-size: 14px;
+   }
+   ul{
+      padding-left: 0 !important; 
+   }
+
 }
    

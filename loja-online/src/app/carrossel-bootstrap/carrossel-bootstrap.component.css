@@ -21,4 +21,8 @@
 background-color: #000000;
 border-radius: 5px;
 }
-
+/* @media screen and (max-width: 450px){
+   .imgCarrossel{
+      height: 470px;
+    }  
+} */
