@@ -38,6 +38,7 @@
 }
 .nav-search{
    align-content:center ;
+   z-index: 1;
    flex-grow:inherit;
 }
 .click-a-direita{
@@ -84,6 +85,9 @@ svg{
    }
    .itens-diversos{
       font-size: 12px;
+   }
+   .nav-search-input{
+      z-index: 1;
    }
    .nav-search input{
       width: 300px;
